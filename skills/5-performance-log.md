@@ -15,7 +15,7 @@ From the Zoho Campaigns report (aggregates only): sent, delivered, unique clicks
 2. Mark anything not available as `unmeasured`, never blank or zero.
 3. Compare with the **previous issue only**. Say what changed between them (sender, send time, type, subject pattern, event block position).
 4. Write one lesson in one line.
-5. Append a lesson entry to `../log/LESSONS.md`.
+5. Append a lesson entry to `../log/LESSONS.md`. In a chat, where you cannot write files, give the row and the lesson entry for the person to send to Lemuel.
 
 ## Output
 The CSV row and a three-line summary: the number that moved, what changed, the lesson.

@@ -13,7 +13,7 @@ Read `../STYLE_GUIDE.md` first.
 
 ## Steps
 1. Pick the one idea that is useful to someone who was **not** in the room.
-2. Headline = the idea, with the panelist and their role ("Why AI is easiest to ship where a wrong answer is cheap: Younghoon Park").
+2. Headline = the idea, with the panelist and their role ("[The idea in a few words]: [Panelist name], [role]").
 3. Open on the problem the idea answers.
 4. Use the panelist's own words as the pull quote.
 5. A short "Try this week" step for the reader (one concrete action).
@@ -28,7 +28,7 @@ The full issue and a note on what to confirm. For a month plan, one issue per pa
 
 ## Checks
 - The quote is verbatim from the transcript, with its grammar as transcribed. Do not clean it.
-- **No attribution to a speaker the transcript does not name.** If the transcript has no speaker labels, stop and ask for the speaker mapping.
+- **Attribution follows the router's naming rule** (`ROUTER_PROMPT.md`, "Naming speakers"). If the moderator is Tobi, write the moderator's lines in Tobi's first person.
 - Panelist consent is on file.
 - No claim about attendance or who will be at the next edition.
 

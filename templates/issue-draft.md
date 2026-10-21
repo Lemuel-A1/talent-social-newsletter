@@ -35,7 +35,7 @@ Title · Company · Mode · Location · View role →
 Explore more opportunities →
 
 ## Footer
-Powered by VettedAI · Talent Social, Nairobi, Kenya · reason they receive it · LinkedIn | Instagram | TikTok | Unsubscribe
+Powered by VettedAI · Talent Social, Nairobi, Kenya · reason they receive it · LinkedIn | Instagram | Unsubscribe
 
 ## Guardrail check (paste result)
 Verdict: 

@@ -13,8 +13,8 @@ Read `../STYLE_GUIDE.md` first.
 - Event details if an event block runs: name, date, time, area, checkout link, discount code.
 
 ## Steps
-1. **Triage the input.** What is it, who wrote it, how reliable, what date. List anything `internal` (prices, audience counts, check-in rates, strategy): it is never used. If the input has no speaker labels or timestamps, STOP and say so here: nothing can be attributed to a named speaker, and every brief for it is PROVISIONAL and uses unattributed wording ("one panelist"). Ask the owner who spoke which line before any name is used.
-2. **Tag every candidate fact** with an evidence label (primary, second-hand, vendor, internal, stale).
+1. **Triage the input.** What is it, who wrote it, how reliable, what date. List anything `internal` (prices, audience counts, check-in rates, strategy): it is never used. If the input has no speaker labels or timestamps, say so here and apply the naming rule in the router (`ROUTER_PROMPT.md`, "Naming speakers"): ask who said what, and mark each attribution by what supports it. If the upload starts with an AI-generated summary, ignore it as a source.
+2. **Tag every candidate fact** with an evidence label from STYLE_GUIDE section 5 (primary, second-hand, relayed, vendor, stale, inference, internal).
 3. **Find up to 5 stories or findings, and stop at the number the input supports.** If only 3 are viable, plan 3; do not pad. Check that each footnote in a report matches its works-cited entry; a mismatch makes the fact `relayed` or cut. For each: the person or source, the one-line arc, the moment that turns into a lesson for a professional in Nairobi, 2 to 3 verbatim quotes with where they appear, and what is missing.
 4. **Choose a type for each** (Career Edge, Community Spotlight, Panel Insight, Research Brief, Roles and a Tip). For a month, vary the types and put the cheapest last. If the input supports fewer than three types, plan only those, mark each other slot "needs a different input" with what it needs (for example, a member with written OK), and do not draft it from this input.
 5. **Fill the dissection row** per issue: audience, key message (one sentence; if it takes two, split the issue), hook, subject idea, one CTA, one image and its rights.
@@ -27,7 +27,7 @@ One brief per issue using `../templates/issue-brief.md`, each with a fact pack (
 - No `internal` figure in any fact pack.
 - Every quote is verbatim and located in the input.
 - Unsourced items are `{{NEEDS_VERIFICATION}}`.
-- No quote attributed to a named speaker unless the input names them. A map of likely speakers is a guide for confirmation, never permission to print a name.
+- Every named attribution follows the router's naming rule and says what supports it.
 - A finding that would invite an obvious reply (for example, "ask for the full cost first" while our own page hides the price) is held or swapped.
 
 ## Use in another tool

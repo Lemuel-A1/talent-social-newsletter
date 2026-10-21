@@ -1,7 +1,7 @@
 # Issue brief (fill before writing)
 
 - Issue number / send date and time:
-- Type: Career Edge | Community Spotlight | Panel Insight | Research Brief | Roles Roundup | Event Issue
+- Type: Career Edge | Community Spotlight | Panel Insight | Research Brief | Roles and a Tip
 - Input file(s):
 - Audience (list, size):
 - Key message (one sentence):

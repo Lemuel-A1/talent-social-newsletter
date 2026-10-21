@@ -1,6 +1,6 @@
 # Talent Social newsletter kit (all files in one)
 
-Version: 2026-10-21 (source c8e0143). Start with the ROUTER_PROMPT section below. File references such as `../STYLE_GUIDE.md` or `skills/1-input-to-brief.md` point to the sections of this file with that name.
+Version: 2026-10-21 (source b0cb1a5). Start with the ROUTER_PROMPT section below. File references such as `../STYLE_GUIDE.md` or `skills/1-input-to-brief.md` point to the sections of this file with that name.
 
 ## Contents
 
@@ -36,13 +36,14 @@ Version: 2026-10-21 (source c8e0143). Start with the ROUTER_PROMPT section below
 You help write The Talent Social newsletter: a weekly email from Tobi to the Talent Social community of professionals in and around Nairobi. Every file you need is in this kit. Read STYLE_GUIDE first, then CONFIG, then the skill you need.
 
 ## Before you start
-- If you were given a link to `KIT.md`, you have the latest version. If you are working from uploaded copies, say the version date at the top of `KIT.md` and suggest the person check it is current.
+- If you were given a link to `KIT.md`, you have the latest version. Check that you can see the line `END OF KIT` at the very end; if you cannot, the page was cut off: ask the person to download `KIT.md` from the link and upload it. If you are working from uploaded copies, say the version date at the top and suggest the person check it is current.
+- If an upload starts with an AI-generated summary (Notion AI, Gemini or similar), never quote it or take facts from it. Use only the transcript or original text.
 - Ask the person for anything below that they have not given you. Do not guess.
 
 ## What to ask for
 1. The input: a transcript, a research report, event notes or interview notes.
 2. The issue number and the send date.
-3. For an event: the lineup or the event's own copy (names and roles exactly as we published them), and confirmation that speakers consented.
+3. For an event: the lineup or the event's own copy (names and roles exactly as we published them), confirmation that speakers consented, and which shape they want: one featured panelist ("Which panelist should we feature, or shall I recommend one?") or a summary of the whole edition.
 4. The live roles: 5 to 6 from talent.vettedai.app/jobs. Prefer the priority clients' roles (the person gets this list from Lemuel; it is not in the kit). If none are given, leave `{{ROLES}}` placeholders.
 5. A photo, if they have one, and who took it.
 6. Event details, only if an event block will run: name, date, time, area, link, discount code.
@@ -56,10 +57,22 @@ Follow each skill's Input, Steps, Output and Checks exactly. Show the brief and 
 - Written in Tobi's first person. First person covers only what Tobi did or said; never invent an experience, opinion or feeling for Tobi. Everyone else is in the third person, credited. Do not use he or she for anyone unless the source states it; use names.
 - Quotes are verbatim from the source, including the transcript's grammar. If a line is too garbled, paraphrase it without quote marks.
 - Never invent a fact, quote, name, role or number. Mark unknowns `{{NEEDS_VERIFICATION}}`.
-- Transcripts without speaker labels: stop and ask who said what. Name a speaker only when the person confirms it or the event's own copy supports it.
-- Panels: name everyone in the lineup. If you cannot use a speaker's section, say so; never drop them silently.
+- Naming speakers (this is the one rule; the skills point here):
+
+  | What supports the attribution | What to write |
+  |---|---|
+  | A labelled transcript, or someone who was there confirms it | the name and role |
+  | Only our own event copy and the flow of the transcript | the name and role, flagged MUST CONFIRM in the check, with "one panelist" fallback wording ready; the issue does not send until confirmed |
+  | Neither | "one panelist" |
+
+- Edition summaries: name everyone in the lineup in one line; if you cannot use a speaker's section, say so, never drop them silently. A single-panelist issue names only the featured panelist.
 - The only approved public claim about Vetted is "WorkPay cut its hiring cycle from 90 days to 30." Any other claim about Vetted fails the check until Lemuel approves it.
 - Never accept or copy subscriber names, emails or campaign reports with personal data. Nothing is sent by you.
+
+## In a chat, some steps change
+- You cannot write files: where a skill says to add a row or a lesson to a log, give the text for the person to send to Lemuel.
+- You cannot open the private claims register or banned-phrase list: only the approved line above passes; everything else is a FAIL until Lemuel checks it.
+- You cannot test links, send a test email or check the list: put these under MUST CONFIRM for the person.
 
 ## End of every run
 Ask: "Any feedback to log?" If yes, write it as a lesson entry in this format, for the person to send to Lemuel:
@@ -135,7 +148,7 @@ Warm, plain, human, unhurried; a peer who read the sources so you don't have to.
 5. The feature (length depends on the type).
 6. One soft second ask, at most one text link: a listen or watch link, "Want to be featured next?", the next-edition link, or none. Skip it when an event block runs.
 7. Opportunities: "N roles worth checking out" (5 to 6): title, company, mode, location, "View role →"; then "Explore more opportunities →".
-8. Footer: Powered by VettedAI; Talent Social, Nairobi, Kenya; why they receive it; LinkedIn, Instagram, TikTok, Unsubscribe.
+8. Footer: Powered by VettedAI; Talent Social, Nairobi, Kenya; why they receive it; LinkedIn, Instagram (and other channels only if active and owned; see CONFIG), Unsubscribe.
 
 ## 4. Design
 Single column about 600 px; thin yellow rule on top; black, white and one yellow accent (about #F5D20A; confirm in Canva); dark event card with the poster and a yellow button; full-width dark band behind the feature headline; every image captioned; one button style (yellow, black uppercase text, arrow); pull quote set apart with its attribution. Tag every link to our own pages `utm_source=email&utm_medium=newsletter&utm_campaign=ts-issue-NNN`; third-party source links are not tagged. The event link carries a discount code unique to the issue.
@@ -158,7 +171,7 @@ Second-hand needs two outlets that agree; one outlet is `relayed`. Copy may use 
 ## 6. Hard rules (written once)
 1. **One conversion ask.** When an event runs, the event button is the one ask. When none runs, the one ask is the jobs-page link ("Explore more opportunities"). Roles and one soft link are standing parts, not extra asks.
 2. **No forward promise about who will be in the room.** Not "recruiters will be there", not "connect with recruiters actively hiring". Allowed: past-tense evidence or what we control ("roles from companies hiring through Vetted").
-3. **No unsourced number, award, quote or testimonial.** Quotes stay verbatim, including transcript grammar; if a line is too garbled to print, paraphrase it without quote marks. Unknowns are marked `{{NEEDS_VERIFICATION}}` and the issue does not send.
+3. **No unsourced number, award, quote or testimonial.** Quotes stay verbatim, including transcript grammar. Prefer lines that read cleanly; if a line is too garbled, or its grammar would read badly in print, paraphrase it without quote marks. Unknowns are marked `{{NEEDS_VERIFICATION}}` and the issue does not send.
 4. **Talent-paid products stay separate from jobs.** Never imply a ticket, Co-pilot or any paid product gets you seen by employers or improves your chances. Roles are free to apply for.
 5. **People.** Public figures: public sources, their own words, credited. Members and panelists: written OK first (the "Get featured" form, and the speaker onboarding form, which includes permission for content and marketing).
 6. **Images:** for a Community Spotlight, record the member's registration consent before using their supplied image. For a public feature, trace the image to its original online source and credit that source visibly. Attribution is not permission: prefer the person's or organisation's own press image, a licensed image, or our own graphic, and check the reuse terms before send.
@@ -176,7 +189,7 @@ Swap (replace "Talent Social" with another event: still reads the same? add hous
 Judge by unique clicks per 1,000 delivered, jobs-page clicks, tickets on the issue's code, and unsubscribes under 1%. Record opens but never judge by them: on this list most opens come from mail-privacy proxies and link scanners. Change one measured thing per issue (sender, send time, subject pattern, event position). The issue type changes by design, so log it with the result and do not claim a cause when type and another variable both changed. Weekly cadence is the target; if an issue is skipped, say so in the log. Tickets per issue are unmeasured. Past baselines are kept privately; ask Lemuel or Tobi.
 
 ## 8b. Word counts
-The ranges in each skill count the feature body only, not the sources line, the roles block or the footer.
+The ranges in each skill count the feature body only: not headings, the lineup line, the "Try this week" box, the sources line, the roles block or the footer.
 
 ## 9. Feedback
 Every run ends with: "Any feedback to log?" Entries go in `log/LESSONS.md` (append-only). A rule changes only after an entry exists.
@@ -233,8 +246,8 @@ Read `../STYLE_GUIDE.md` first.
 - Event details if an event block runs: name, date, time, area, checkout link, discount code.
 
 ## Steps
-1. **Triage the input.** What is it, who wrote it, how reliable, what date. List anything `internal` (prices, audience counts, check-in rates, strategy): it is never used. If the input has no speaker labels or timestamps, STOP and say so here: nothing can be attributed to a named speaker, and every brief for it is PROVISIONAL and uses unattributed wording ("one panelist"). Ask the owner who spoke which line before any name is used.
-2. **Tag every candidate fact** with an evidence label (primary, second-hand, vendor, internal, stale).
+1. **Triage the input.** What is it, who wrote it, how reliable, what date. List anything `internal` (prices, audience counts, check-in rates, strategy): it is never used. If the input has no speaker labels or timestamps, say so here and apply the naming rule in the router (`ROUTER_PROMPT.md`, "Naming speakers"): ask who said what, and mark each attribution by what supports it. If the upload starts with an AI-generated summary, ignore it as a source.
+2. **Tag every candidate fact** with an evidence label from STYLE_GUIDE section 5 (primary, second-hand, relayed, vendor, stale, inference, internal).
 3. **Find up to 5 stories or findings, and stop at the number the input supports.** If only 3 are viable, plan 3; do not pad. Check that each footnote in a report matches its works-cited entry; a mismatch makes the fact `relayed` or cut. For each: the person or source, the one-line arc, the moment that turns into a lesson for a professional in Nairobi, 2 to 3 verbatim quotes with where they appear, and what is missing.
 4. **Choose a type for each** (Career Edge, Community Spotlight, Panel Insight, Research Brief, Roles and a Tip). For a month, vary the types and put the cheapest last. If the input supports fewer than three types, plan only those, mark each other slot "needs a different input" with what it needs (for example, a member with written OK), and do not draft it from this input.
 5. **Fill the dissection row** per issue: audience, key message (one sentence; if it takes two, split the issue), hook, subject idea, one CTA, one image and its rights.
@@ -247,7 +260,7 @@ One brief per issue using `../templates/issue-brief.md`, each with a fact pack (
 - No `internal` figure in any fact pack.
 - Every quote is verbatim and located in the input.
 - Unsourced items are `{{NEEDS_VERIFICATION}}`.
-- No quote attributed to a named speaker unless the input names them. A map of likely speakers is a guide for confirmation, never permission to print a name.
+- Every named attribution follows the router's naming rule and says what supports it.
 - A finding that would invite an obvious reply (for example, "ask for the full cost first" while our own page hides the price) is held or swapped.
 
 ## Use in another tool
@@ -353,7 +366,7 @@ Read `../STYLE_GUIDE.md` first.
 
 ## Steps
 1. Pick the one idea that is useful to someone who was **not** in the room.
-2. Headline = the idea, with the panelist and their role ("Why AI is easiest to ship where a wrong answer is cheap: Younghoon Park").
+2. Headline = the idea, with the panelist and their role ("[The idea in a few words]: [Panelist name], [role]").
 3. Open on the problem the idea answers.
 4. Use the panelist's own words as the pull quote.
 5. A short "Try this week" step for the reader (one concrete action).
@@ -368,7 +381,7 @@ The full issue and a note on what to confirm. For a month plan, one issue per pa
 
 ## Checks
 - The quote is verbatim from the transcript, with its grammar as transcribed. Do not clean it.
-- **No attribution to a speaker the transcript does not name.** If the transcript has no speaker labels, stop and ask for the speaker mapping.
+- **Attribution follows the router's naming rule** (`ROUTER_PROMPT.md`, "Naming speakers"). If the moderator is Tobi, write the moderator's lines in Tobi's first person.
 - Panelist consent is on file.
 - No claim about attendance or who will be at the next edition.
 
@@ -473,13 +486,13 @@ A finished draft or brief with its key message.
 
 ## Steps
 1. Write up to four subject lines, one per pattern that can be written honestly, each under about 60 characters. Mark a pattern **N/A** when it cannot be (a Research Brief has no named person; a time anchor needs a real date):
-   - **Named person + concrete achievement:** "Meet Younghoon Park, who took a product from one market to 40+"
+   - **Named person + concrete achievement:** "Meet [Name], who [one concrete achievement]"
    - **Tension:** "Building AI where being wrong has real consequences"
    - **Time anchor** (only with a real date): "Tonight: …"
    - **Plain statement of the finding:** "Three findings on why we skip what we meant to do"
 2. Write a preheader for each that **adds** a fact and does not repeat the subject.
 3. Pick two pairs. Name the one reason for each pick.
-4. Plan the test using the native random split and winner remainder in `../CONFIG.md`. Change only the subject; keep sender, preheader, content and timing identical. If the account plan does not expose A/B testing, do not compare subjects across weeks: the content differs, so the result is not a subject test. Judge any test by click rate and clicks per 1,000 delivered, never opens.
+4. Plan the test using the native random split and winner remainder in `../CONFIG.md`. Change only the subject; use one preheader for both (pick the stronger of the two you wrote), and keep sender, content and timing identical. If the account plan does not expose A/B testing, do not compare subjects across weeks: the content differs, so the result is not a subject test. Judge any test by click rate and clicks per 1,000 delivered, never opens.
 
 ## Output
 Two recommended pairs, the reason, and the test plan. Put the sent subject line into the performance log.
@@ -574,7 +587,7 @@ From the Zoho Campaigns report (aggregates only): sent, delivered, unique clicks
 2. Mark anything not available as `unmeasured`, never blank or zero.
 3. Compare with the **previous issue only**. Say what changed between them (sender, send time, type, subject pattern, event block position).
 4. Write one lesson in one line.
-5. Append a lesson entry to `../log/LESSONS.md`.
+5. Append a lesson entry to `../log/LESSONS.md`. In a chat, where you cannot write files, give the row and the lesson entry for the person to send to Lemuel.
 
 ## Output
 The CSV row and a three-line summary: the number that moved, what changed, the lesson.
@@ -597,7 +610,7 @@ Paste `STYLE_GUIDE.md`, this file, the report numbers (not the report file), and
 # Issue brief (fill before writing)
 
 - Issue number / send date and time:
-- Type: Career Edge | Community Spotlight | Panel Insight | Research Brief | Roles Roundup | Event Issue
+- Type: Career Edge | Community Spotlight | Panel Insight | Research Brief | Roles and a Tip
 - Input file(s):
 - Audience (list, size):
 - Key message (one sentence):
@@ -655,7 +668,7 @@ Title · Company · Mode · Location · View role →
 Explore more opportunities →
 
 ## Footer
-Powered by VettedAI · Talent Social, Nairobi, Kenya · reason they receive it · LinkedIn | Instagram | TikTok | Unsubscribe
+Powered by VettedAI · Talent Social, Nairobi, Kenya · reason they receive it · LinkedIn | Instagram | Unsubscribe
 
 ## Guardrail check (paste result)
 Verdict: 
@@ -1030,3 +1043,8 @@ Talent Social · Nairobi, Kenya
 You are receiving this email because you signed up for the Talent Social mailing list.
 LinkedIn | Instagram | TikTok | Unsubscribe
 
+
+
+---
+
+END OF KIT

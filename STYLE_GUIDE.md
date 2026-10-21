@@ -21,7 +21,7 @@ Warm, plain, human, unhurried; a peer who read the sources so you don't have to.
 5. The feature (length depends on the type).
 6. One soft second ask, at most one text link: a listen or watch link, "Want to be featured next?", the next-edition link, or none. Skip it when an event block runs.
 7. Opportunities: "N roles worth checking out" (5 to 6): title, company, mode, location, "View role →"; then "Explore more opportunities →".
-8. Footer: Powered by VettedAI; Talent Social, Nairobi, Kenya; why they receive it; LinkedIn, Instagram, TikTok, Unsubscribe.
+8. Footer: Powered by VettedAI; Talent Social, Nairobi, Kenya; why they receive it; LinkedIn, Instagram (and other channels only if active and owned; see CONFIG), Unsubscribe.
 
 ## 4. Design
 Single column about 600 px; thin yellow rule on top; black, white and one yellow accent (about #F5D20A; confirm in Canva); dark event card with the poster and a yellow button; full-width dark band behind the feature headline; every image captioned; one button style (yellow, black uppercase text, arrow); pull quote set apart with its attribution. Tag every link to our own pages `utm_source=email&utm_medium=newsletter&utm_campaign=ts-issue-NNN`; third-party source links are not tagged. The event link carries a discount code unique to the issue.
@@ -44,7 +44,7 @@ Second-hand needs two outlets that agree; one outlet is `relayed`. Copy may use 
 ## 6. Hard rules (written once)
 1. **One conversion ask.** When an event runs, the event button is the one ask. When none runs, the one ask is the jobs-page link ("Explore more opportunities"). Roles and one soft link are standing parts, not extra asks.
 2. **No forward promise about who will be in the room.** Not "recruiters will be there", not "connect with recruiters actively hiring". Allowed: past-tense evidence or what we control ("roles from companies hiring through Vetted").
-3. **No unsourced number, award, quote or testimonial.** Quotes stay verbatim, including transcript grammar; if a line is too garbled to print, paraphrase it without quote marks. Unknowns are marked `{{NEEDS_VERIFICATION}}` and the issue does not send.
+3. **No unsourced number, award, quote or testimonial.** Quotes stay verbatim, including transcript grammar. Prefer lines that read cleanly; if a line is too garbled, or its grammar would read badly in print, paraphrase it without quote marks. Unknowns are marked `{{NEEDS_VERIFICATION}}` and the issue does not send.
 4. **Talent-paid products stay separate from jobs.** Never imply a ticket, Co-pilot or any paid product gets you seen by employers or improves your chances. Roles are free to apply for.
 5. **People.** Public figures: public sources, their own words, credited. Members and panelists: written OK first (the "Get featured" form, and the speaker onboarding form, which includes permission for content and marketing).
 6. **Images:** for a Community Spotlight, record the member's registration consent before using their supplied image. For a public feature, trace the image to its original online source and credit that source visibly. Attribution is not permission: prefer the person's or organisation's own press image, a licensed image, or our own graphic, and check the reuse terms before send.
@@ -62,7 +62,7 @@ Swap (replace "Talent Social" with another event: still reads the same? add hous
 Judge by unique clicks per 1,000 delivered, jobs-page clicks, tickets on the issue's code, and unsubscribes under 1%. Record opens but never judge by them: on this list most opens come from mail-privacy proxies and link scanners. Change one measured thing per issue (sender, send time, subject pattern, event position). The issue type changes by design, so log it with the result and do not claim a cause when type and another variable both changed. Weekly cadence is the target; if an issue is skipped, say so in the log. Tickets per issue are unmeasured. Past baselines are kept privately; ask Lemuel or Tobi.
 
 ## 8b. Word counts
-The ranges in each skill count the feature body only, not the sources line, the roles block or the footer.
+The ranges in each skill count the feature body only: not headings, the lineup line, the "Try this week" box, the sources line, the roles block or the footer.
 
 ## 9. Feedback
 Every run ends with: "Any feedback to log?" Entries go in `log/LESSONS.md` (append-only). A rule changes only after an entry exists.
